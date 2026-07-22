@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mostafa & Yasmine - Wedding Invitation</title>
-  <link rel="icon" type="image/jpeg" href="images.jpeg">
+  <link rel="icon" type="image/jpeg" href="favicon.jpeg">
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="Mostafa & Yasmine - Wedding Invitation">
@@ -15,13 +15,16 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mostafa & Yasmine - Wedding Invitation">
   <meta property="og:description" content="We are getting married! Join us to celebrate our wedding day.">
-  <meta property="og:image" content="images.jpeg">
+  <meta property="og:image" content="favicon.jpeg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="Mostafa & Yasmine - Wedding Invitation">
   <meta property="twitter:description" content="We are getting married! Join us to celebrate our wedding day.">
-  <meta property="twitter:image" content="images.jpeg">
+  <meta property="twitter:image" content="favicon.jpeg">
+
+  <!-- Preload Background -->
+  <link rel="preload" as="image" href="bg-sketch.png">
 
   <!-- Google Fonts for the Exact Match Theme -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +55,7 @@
   </div>
 
   <!-- Audio Player (Hidden) -->
-  <audio id="quran-audio" src="القران.mp3" preload="auto" style="display: none;"></audio>
+  <audio id="quran-audio" src="quran.mp3" preload="auto" style="display: none;"></audio>
 
   <!-- Overlay / First Screen (Opening) -->
   <div id="invitation-overlay">
@@ -103,7 +106,7 @@
         <div class="frame-lines horizontal-bottom"></div>
         <div class="frame-lines vertical-left"></div>
         <div class="frame-lines vertical-right"></div>
-        <img src="1.jpeg" alt="The Couple" class="framed-photo">
+        <img src="couple.jpeg" alt="The Couple" class="framed-photo" loading="eager">
       </div>
 
       <p class="subtitle uppercase mt-4" data-en="THE WEDDING OF" data-ar="حفل زفاف">حفل زفاف</p>
@@ -231,7 +234,7 @@
           <path d="M 195 225 L 235 225 M 225 195 L 225 235" stroke="var(--navy)" stroke-width="1.5"
             stroke-linecap="round" />
         </svg>
-        <img src="2.jpeg" alt="Venue" class="sketch-corners-img">
+        <img src="map.jpeg" alt="Venue" class="sketch-corners-img" loading="lazy">
       </div>
 
       <p class="venue-name" data-en="Giza - Al Warraq - 25 January Street" data-ar="الجيزة - الوراق - شارع 25 يناير">
@@ -259,7 +262,7 @@
         <!-- Top Image -->
         <div class="polaroid-wrapper gallery-top" data-aos="fade-up">
           <div class="polaroid-image">
-            <img src="3.jpeg" alt="Venue Photo 1">
+            <img src="gallery1.jpeg" alt="Venue Photo 1" loading="lazy">
           </div>
         </div>
 
@@ -267,12 +270,12 @@
         <div class="gallery-bottom-row">
           <div class="polaroid-wrapper gallery-bottom" data-aos="fade-up" data-aos-delay="100">
             <div class="polaroid-image">
-              <img src="4.jpeg" alt="Venue Photo 2">
+              <img src="gallery2.jpeg" alt="Venue Photo 2" loading="lazy">
             </div>
           </div>
           <div class="polaroid-wrapper gallery-bottom" data-aos="fade-up" data-aos-delay="200">
             <div class="polaroid-image">
-              <img src="5.jpeg" alt="Venue Photo 3">
+              <img src="gallery3.jpeg" alt="Venue Photo 3" loading="lazy">
             </div>
           </div>
         </div>

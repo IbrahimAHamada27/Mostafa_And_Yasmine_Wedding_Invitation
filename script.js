@@ -86,4 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(updateCountdown, 1000);
     updateCountdown();
+
+    // Ensure AOS refreshes after all images load
+    window.addEventListener("load", () => {
+        AOS.refresh();
+    });
 });
