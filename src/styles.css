@@ -75,6 +75,7 @@ html[dir="rtl"] .subtitle {
   flex-direction: column;
   align-items: center;
   max-width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 .text-center {
@@ -379,6 +380,7 @@ html[dir="rtl"] .subtitle {
   align-items: center;
   gap: 25px;
   margin-top: 30px;
+  width: 100%;
 }
 .gallery-top.polaroid-wrapper {
   width: 90%;
