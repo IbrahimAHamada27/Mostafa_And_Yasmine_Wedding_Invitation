@@ -28,7 +28,7 @@ html[dir="rtl"] {
 body {
   font-family: var(--font-en-body);
   background-color: var(--bg-color);
-  background-image: linear-gradient(rgba(253, 252, 248, 0.6), rgba(253, 252, 248, 0.6)), url('bg-sketch.png');
+  background-image: linear-gradient(rgba(253, 252, 248, 0.6), rgba(253, 252, 248, 0.6)), url('bg-sketch.webp');
   background-size: cover; /* Keeps proportion without stretching */
   background-attachment: fixed; /* Keeps it fixed nicely on screen while scrolling */
   background-position: center center;
