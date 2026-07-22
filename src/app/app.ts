@@ -1,13 +1,12 @@
 import { Component, OnInit, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { NgOptimizedImage } from '@angular/common';
 
 declare var AOS: any;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage],
+  imports: [CommonModule],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
 })
