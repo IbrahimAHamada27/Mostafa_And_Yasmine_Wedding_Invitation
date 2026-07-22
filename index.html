@@ -23,9 +23,6 @@
   <meta property="twitter:description" content="We are getting married! Join us to celebrate our wedding day.">
   <meta property="twitter:image" content="favicon.jpeg">
 
-  <!-- Preload Background -->
-  <link rel="preload" as="image" href="bg-sketch.png">
-
   <!-- Google Fonts for the Exact Match Theme -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,14 +38,6 @@
 </head>
 
 <body>
-  <!-- SVG Sketch Filter -->
-  <svg width="0" height="0" style="position:absolute;z-index:-1;">
-    <filter id="sketchy">
-      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
-    </filter>
-  </svg>
-
   <!-- Invitation Overlay -->
   <div class="lang-switcher">
     <button id="langToggle">EN | AR</button>
