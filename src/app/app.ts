@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule, isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 
 declare var AOS: any;
@@ -25,7 +25,10 @@ export class App implements OnInit, AfterViewInit {
   private countdownInterval: any;
   private isBrowser: boolean;
 
-  constructor(@Inject(PLATFORM_ID) platformId: Object) {
+  constructor(
+    @Inject(PLATFORM_ID) platformId: Object,
+    private cdr: ChangeDetectorRef
+  ) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
@@ -92,6 +95,7 @@ export class App implements OnInit, AfterViewInit {
     if (this.isBrowser) {
       this.countdownInterval = setInterval(() => {
         this.updateCountdown();
+        this.cdr.detectChanges();
       }, 1000);
     }
   }
